@@ -1,4 +1,4 @@
-#Overview
+##Overview
 This project demonstrates the implementation of a pre-trained color detection neural network on an FPGA using the ZedBoard (Zynq SoC). The neural network, originally written in Octave, was converted to C++ for hardware synthesis using Vivado HLS. The project covers the entire process from neural network conversion, synthesis, and optimization to hardware implementation on the Zynq SoC, including PS-PL communication.
 
 #Project Description
