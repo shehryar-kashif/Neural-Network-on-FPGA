@@ -17,18 +17,7 @@ This project demonstrates the implementation of a pre-trained color detection ne
 4) ZedBoard (Zynq SoC): The hardware platform used to implement the design.
 
 ## Project Structure
-src/: Contains the C++ source code for the neural network and PS-PL communication.
-vivado_hls/: Files for Vivado HLS, including directives for optimization.
-vivado_project/: TCL scripts and configuration files for Vivado block design.
-sdk/: Vivado SDK files for managing PS-PL communication.
-bitstream/: Generated bitstream and related files for ZedBoard implementation.
-
-# How to Run
-1) Clone the repository: git clone https://github.com/shehryar-kashif/Neural-Network-on-FPGA
-2) Vivado HLS: Synthesize the C++ code using Vivado HLS.
-3) Vivado Design: Import the generated HLS IP into Vivado and connect it with the Zynq PS using the block design. Utilize AXI Data FIFO for clock management.
-4) Vivado SDK: Export the bitstream and hardware to Vivado SDK. Use the C++ code provided in the sdk/ folder to handle the PS-PL communication and image processing.
-5) ZedBoard Implementation: Upload the bitstream and FSBL to the ZedBoard.Run the C++ code on the PS to process the image and generate the output.
+Codes folder contains the source code (for Vivado HLS synthesis) and the SDK_Code (to be run on Vivado SDK). The Block Design Floader contains the tcl script for the block design and lastly, the master branch contains the generated HLS IP (name nn_start).
 
 # Results
 The optimized neural network processes an image in less than 0.1 seconds. Efficient use of AXI Stream protocol and Vivado HLS optimizations led to reduced BRAM utilization and improved overall performance.
