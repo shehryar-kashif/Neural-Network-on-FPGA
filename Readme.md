@@ -10,13 +10,13 @@ This project demonstrates the implementation of a pre-trained color detection ne
 5) Hardware Implementation: After generating the HDL wrapper, the design was synthesized, implemented, and a bitstream was generated. The bitstream and code were then exported to Vivado SDK, where the remaining C++ code was written to handle data transfer between PS and PL.
 6) Running the Design on ZedBoard: The bitstream was uploaded to the ZedBoard, followed by the First Stage Boot Loader (FSBL) code to initialize the Zynq registers and memory. Finally, the C++ code was run on the PS to process the image using the neural network implemented in the PL.
 
-# Key Technologies
+## Key Technologies
 1) Vivado HLS: High-Level Synthesis to convert C++ code into HDL (Verilog/VHDL).
 2) Vivado Design Suite: For generating the hardware block design and bitstream.
 3) AXI Stream Protocol: Used to transfer data between the Processing System (PS) and Programmable Logic (PL) efficiently.
 4) ZedBoard (Zynq SoC): The hardware platform used to implement the design.
 
-# Project Structure
+## Project Structure
 src/: Contains the C++ source code for the neural network and PS-PL communication.
 vivado_hls/: Files for Vivado HLS, including directives for optimization.
 vivado_project/: TCL scripts and configuration files for Vivado block design.
