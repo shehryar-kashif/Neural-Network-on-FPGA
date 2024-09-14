@@ -24,11 +24,11 @@ sdk/: Vivado SDK files for managing PS-PL communication.
 bitstream/: Generated bitstream and related files for ZedBoard implementation.
 
 # How to Run
-Clone the repository: git clone https://github.com/yourusername/neural-network-fpga
-Vivado HLS: Synthesize the C++ code using Vivado HLS. Directives for optimization are provided in the vivado_hls/ folder.
-Vivado Design: Import the generated HLS IP into Vivado and connect it with the Zynq PS using the block design. Utilize AXI Data FIFO for clock management.
-Vivado SDK: Export the bitstream and hardware to Vivado SDK. Use the C++ code provided in the sdk/ folder to handle the PS-PL communication and image processing.
-ZedBoard Implementation: Upload the bitstream and FSBL to the ZedBoard.Run the C++ code on the PS to process the image and generate the output.
+1) Clone the repository: git clone https://github.com/shehryar-kashif/Neural-Network-on-FPGA
+2) Vivado HLS: Synthesize the C++ code using Vivado HLS.
+3) Vivado Design: Import the generated HLS IP into Vivado and connect it with the Zynq PS using the block design. Utilize AXI Data FIFO for clock management.
+4) Vivado SDK: Export the bitstream and hardware to Vivado SDK. Use the C++ code provided in the sdk/ folder to handle the PS-PL communication and image processing.
+5) ZedBoard Implementation: Upload the bitstream and FSBL to the ZedBoard.Run the C++ code on the PS to process the image and generate the output.
 
 # Results
 The optimized neural network processes an image in less than 0.1 seconds. Efficient use of AXI Stream protocol and Vivado HLS optimizations led to reduced BRAM utilization and improved overall performance.
